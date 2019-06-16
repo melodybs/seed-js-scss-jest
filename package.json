@@ -38,12 +38,23 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.6.4",
     "eslint-plugin-vue": "^5.0.0",
     "expect": "^24.8.0",
+    "inject-loader": "^4.0.1",
+    "jest-chain": "^1.1.2",
+    "jest-changed-files": "^24.8.0",
     "jest-cli": "^24.8.0",
+    "jest-diff": "^24.8.0",
+    "jest-docblock": "^24.3.0",
+    "jest-extended": "^0.11.1",
+    "jest-get-type": "^24.8.0",
+    "jest-validate": "^24.8.0",
+    "jest-worker": "^24.6.0",
     "jsdom": "^15.1.1",
     "jsdom-global": "^3.0.2",
     "node-sass": "^4.9.0",
+    "pretty-format": "^24.8.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-storybook": "^0.6.1",
     "vue-template-compiler": "^2.6.10"
@@ -51,11 +62,13 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "jest/globals": true
     },
     "extends": [
       "plugin:vue/recommended",
-      "@vue/prettier"
+      "@vue/prettier",
+      "plugin:jest/recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
@@ -67,7 +80,10 @@
           "singleQuote": true
         }
       ]
-    }
+    },
+    "plugins": [
+      "jest"
+    ]
   },
   "postcss": {
     "plugins": {
@@ -106,6 +122,16 @@
     "watchPlugins": [
       "jest-watch-typeahead/filename",
       "jest-watch-typeahead/testname"
+    ],
+    "setupTestFrameworkScriptFile": "./tests/unit/setup.js",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,vue}",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": [
+      "html",
+      "text-summary"
     ]
   }
 }

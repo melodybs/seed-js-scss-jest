@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for seed-js-scss-jest/build/dev-server.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">seed-js-scss-jest/build</a> dev-server.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/107</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/101</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Node.js의 require를 사용해 임포트
+const bodyParser = <span class="cstat-no" title="statement not covered" >require('body-parser');</span>
+&nbsp;
+// 'Express' 애플리케이션 인스턴스를 받는 함수를 익스포트
+<span class="cstat-no" title="statement not covered" >module.exports = <span class="fstat-no" title="function not covered" >app</span> =&gt; {</span>
+  // HTTP 요청의 body 내용을 JSON으로 파싱하는 미들웨어를 설치
+<span class="cstat-no" title="statement not covered" >  app.use(bodyParser.json());</span>
+&nbsp;
+  // 사용자 정보
+  const users = <span class="cstat-no" title="statement not covered" >{</span>
+    'foo@domain.com': {
+      password: '12345678',
+      userId: 1,
+      token: '1234567890abcdef'
+    }
+  };
+&nbsp;
+  // 태스크 목록 ID
+  let nextTaskListId = <span class="cstat-no" title="statement not covered" >1;</span>
+  // 태스크 ID
+  let nextTaskId = <span class="cstat-no" title="statement not covered" >1;</span>
+&nbsp;
+  // 태스크 목록 ID를 생성하는 헬퍼 함수
+  const generateTaskListId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" ></span>nextTaskListId++;</span></span>
+&nbsp;
+  // 태스크 ID를 생성하는 헬퍼 함수
+  const generateTaskId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" ></span>nextTaskId++;</span></span>
+&nbsp;
+  // 태스크를 생성하는 헬퍼 함수
+  const createTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >listId</span> =&gt; (<span class="cstat-no" title="statement not covered" >{</span></span>
+    id: generateTaskId(),
+    name: `태스크 ${nextTaskId - 1}`,
+    description: `이것은 태스크 ${nextTaskId - 1}입니다.`,
+    listId
+  });
+&nbsp;
+  // 태스크 목록을 생성하는 헬퍼 함수
+  const createTaskList = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(n</span>ame, num) =&gt; {</span>
+    const id = <span class="cstat-no" title="statement not covered" >generateTaskListId();</span>
+    const list = <span class="cstat-no" title="statement not covered" >{ id, name, items: [] };</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; num; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      list.items.push(createTask(id));</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return list;</span>
+  };
+&nbsp;
+  // 보드 정보
+  const board = <span class="cstat-no" title="statement not covered" >{</span>
+    lists: [
+      createTaskList('TODO', 2),
+      createTaskList('WIP', 1),
+      createTaskList('DONE', 1)
+    ]
+  };
+&nbsp;
+  // 로그인 API 엔드포인트 '/auth/login'
+<span class="cstat-no" title="statement not covered" >  app.post('/auth/login', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const { email, password } = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    const user = <span class="cstat-no" title="statement not covered" >users[email];</span>
+<span class="cstat-no" title="statement not covered" >    if (user) {</span>
+<span class="cstat-no" title="statement not covered" >      if (user.password !== password) {</span>
+<span class="cstat-no" title="statement not covered" >        res.status(401).json({ message: '로그인에 실패했습니다' });</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        res.json({ userId: user.userId, token: user.token });</span>
+      }
+    } else {
+<span class="cstat-no" title="statement not covered" >      res.status(404).json({ message: '등록된 사용자가 아닙니다' });</span>
+    }
+  });
+&nbsp;
+  // 보드 태스크 목록 API 엔드포인트 '/lists'
+<span class="cstat-no" title="statement not covered" >  app.get('/lists', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+<span class="cstat-no" title="statement not covered" >    res.json({ lists: board.lists });</span>
+  });
+&nbsp;
+  // 태스크를 추가하는 헬퍼 함수
+  function <span class="fstat-no" title="function not covered" >addTask(board, name, listId) {</span>
+    let task = <span class="cstat-no" title="statement not covered" >null;</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; board.lists.length; i++) {</span>
+      const list = <span class="cstat-no" title="statement not covered" >board.lists[i];</span>
+<span class="cstat-no" title="statement not covered" >      if (list.id === listId) {</span>
+<span class="cstat-no" title="statement not covered" >        task = {</span>
+          id: generateTaskId(),
+          name,
+          description: '',
+          listId
+        };
+<span class="cstat-no" title="statement not covered" >        list.items.push(task);</span>
+<span class="cstat-no" title="statement not covered" >        break;</span>
+      }
+    }
+<span class="cstat-no" title="statement not covered" >    return task;</span>
+  }
+&nbsp;
+  // タスク 추가 API 엔드포인트 '/tasks/add'
+<span class="cstat-no" title="statement not covered" >  app.post('/tasks/add', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+    const { name } = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    const listId = <span class="cstat-no" title="statement not covered" >parseInt(req.body.listId);</span>
+    const task = <span class="cstat-no" title="statement not covered" >addTask(board, name, listId);</span>
+<span class="cstat-no" title="statement not covered" >    if (task) {</span>
+<span class="cstat-no" title="statement not covered" >      res.status(201).json(task);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      res</span>
+        .status(500)
+        .json({ message: '알 수 없는 원인으로 태스크 추가에 실패했습니다' });
+    }
+  });
+&nbsp;
+  // 태스크를 수정하는 헬퍼 함수
+  function <span class="fstat-no" title="function not covered" >updateTask(board, id, name, description, listId) {</span>
+    let ret = <span class="cstat-no" title="statement not covered" >false;</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; board.lists.length; i++) {</span>
+      const list = <span class="cstat-no" title="statement not covered" >board.lists[i];</span>
+<span class="cstat-no" title="statement not covered" >      if (list.id !== listId) {</span>
+<span class="cstat-no" title="statement not covered" >        continue;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      for (let j = 0; j &lt; list.items.length; j++) {</span>
+        const item = <span class="cstat-no" title="statement not covered" >list.items[j];</span>
+<span class="cstat-no" title="statement not covered" >        if (item.id === id) {</span>
+<span class="cstat-no" title="statement not covered" >          item.name = name;</span>
+<span class="cstat-no" title="statement not covered" >          item.description = description;</span>
+<span class="cstat-no" title="statement not covered" >          ret = true;</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        }
+      }
+    }
+<span class="cstat-no" title="statement not covered" >    return ret;</span>
+  }
+&nbsp;
+  // 태스크 수정 API 엔드포인트 '/tasks/:id/update'
+<span class="cstat-no" title="statement not covered" >  app.put('/tasks/:id/update', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+    const { name, description } = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    const id = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+    const listId = <span class="cstat-no" title="statement not covered" >parseInt(req.body.listId);</span>
+    const ret = <span class="cstat-no" title="statement not covered" >updateTask(board, id, name, description, listId);</span>
+<span class="cstat-no" title="statement not covered" >    if (ret) {</span>
+<span class="cstat-no" title="statement not covered" >      res.sendStatus(200);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      res</span>
+        .status(500)
+        .json({ message: '알 수 없는 원인으로 태스크 수정에 실패했습니다' });
+    }
+  });
+&nbsp;
+  // 태스크 삭제 헬퍼 함수
+  function <span class="fstat-no" title="function not covered" >removeTask(board, id) {</span>
+<span class="cstat-no" title="statement not covered" >    board.lists.forEach(<span class="fstat-no" title="function not covered" >list</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      list.items = list.items.filter(<span class="fstat-no" title="function not covered" >item</span> =&gt; <span class="cstat-no" title="statement not covered" >item.id !== id);</span></span>
+    });
+  }
+&nbsp;
+  // 태스크 삭제 API 엔드포인트 '/task/:id/remove'
+<span class="cstat-no" title="statement not covered" >  app.delete('/tasks/:id/remove', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+    const id = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+<span class="cstat-no" title="statement not covered" >    removeTask(board, id);</span>
+<span class="cstat-no" title="statement not covered" >    res.sendStatus(204);</span>
+  });
+&nbsp;
+  // 태스크 이동 API 엔드포인트 '/task/:id/move'
+<span class="cstat-no" title="statement not covered" >  app.post('/tasks/:id/move', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+&nbsp;
+    const target = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+    const from = <span class="cstat-no" title="statement not covered" >parseInt(req.body.from);</span>
+    const to = <span class="cstat-no" title="statement not covered" >parseInt(req.body.to);</span>
+&nbsp;
+    const fromTaskList = <span class="cstat-no" title="statement not covered" >getTaskList(board, from);</span>
+    const index = <span class="cstat-no" title="statement not covered" >fromTaskList.items.findIndex(<span class="fstat-no" title="function not covered" >item</span> =&gt; <span class="cstat-no" title="statement not covered" >item.id === target);</span></span>
+    const task = <span class="cstat-no" title="statement not covered" >fromTaskList.items[index];</span>
+<span class="cstat-no" title="statement not covered" >    fromTaskList.items.splice(index, 1);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    task.listId = to;</span>
+&nbsp;
+    const toTaskList = <span class="cstat-no" title="statement not covered" >getTaskList(board, to);</span>
+<span class="cstat-no" title="statement not covered" >    toTaskList.items.push(task);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    res.sendStatus(200);</span>
+  });
+&nbsp;
+  function <span class="fstat-no" title="function not covered" >getTaskList(board, id) {</span>
+<span class="cstat-no" title="statement not covered" >    return board.lists.find(<span class="fstat-no" title="function not covered" >list</span> =&gt; <span class="cstat-no" title="statement not covered" >list.id === id);</span></span>
+  }
+&nbsp;
+  // 로그아웃 API 엔드포인트 '/auth/logout'
+<span class="cstat-no" title="statement not covered" >  app.delete('/auth/logout', <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const token = <span class="cstat-no" title="statement not covered" >req.headers['x-kbn-token'];</span>
+<span class="cstat-no" title="statement not covered" >    if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(403).json({ message: '허가되지 않았습니다' });</span>
+    }
+    // NOTE: 목업이므로 토큰 검증 등은 구현되지 않았음
+<span class="cstat-no" title="statement not covered" >    res.sendStatus(204);</span>
+  });
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jun 16 2019 11:53:37 GMT+0900 (GMT+09:00)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

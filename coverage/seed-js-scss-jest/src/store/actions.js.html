@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for seed-js-scss-jest/src/store/actions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">seed-js-scss-jest/src/store</a> actions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/30</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import * as types from './mutation-types';</span>
+<span class="cstat-no" title="statement not covered" >import { Auth, List, Task } from '../api';</span>
+&nbsp;
+export default {
+  login: <span class="fstat-no" title="function not covered" >({</span> commit }, authInfo) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return Auth.login(authInfo)</span>
+      .then(<span class="fstat-no" title="function not covered" >({</span> token, userId }) =&gt; {
+<span class="cstat-no" title="statement not covered" >        localStorage.setItem('token', token);</span>
+<span class="cstat-no" title="statement not covered" >        commit(types.AUTH_LOGIN, { token, userId });</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  fetchLists: <span class="fstat-no" title="function not covered" >({</span> commit, state }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return List.fetch(state.auth.token)</span>
+      .then(<span class="fstat-no" title="function not covered" >({</span> lists }) =&gt; {
+<span class="cstat-no" title="statement not covered" >        commit(types.FETCH_ALL_TASKLIST, lists);</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  addTask: <span class="fstat-no" title="function not covered" >({</span> commit, state }, { listId, name }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return Task.add(state.auth.token, { listId, name })</span>
+      .then(<span class="fstat-no" title="function not covered" >task</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        commit(types.ADD_TASK, task);</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  updateTask: <span class="fstat-no" title="function not covered" >({</span> commit, state }, task) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return Task.update(state.auth.token, task)</span>
+      .then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >        commit(types.UPDATE_TASK, task);</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  removeTask: <span class="fstat-no" title="function not covered" >({</span> commit, state }, { id, listId }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return Task.remove(state.auth.token, { id, listId })</span>
+      .then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >        commit(types.REMOVE_TASK, { id, listId });</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  moveTaskFrom: <span class="fstat-no" title="function not covered" >({</span> commit, state }, { id, listId }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    commit(types.MOVE_TASK_FROM, { target: id, from: listId });</span>
+<span class="cstat-no" title="statement not covered" >    return Promise.resolve();</span>
+  },
+&nbsp;
+  moveToTask: <span class="fstat-no" title="function not covered" >({</span> commit, state }, { id, listId }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    commit(types.MOVE_TO_TASK, { target: id, to: listId });</span>
+<span class="cstat-no" title="statement not covered" >    return Promise.resolve();</span>
+  },
+&nbsp;
+  performTaskMoving: <span class="fstat-no" title="function not covered" >({</span> commit, state }) =&gt; {
+    const { target, from, to } = <span class="cstat-no" title="statement not covered" >state.dragging;</span>
+<span class="cstat-no" title="statement not covered" >    return Task.move(state.auth.token, { id: target, from, to })</span>
+      .then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >        commit(types.MOVE_TASK_DONE, { target, from, to });</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  },
+&nbsp;
+  logout: <span class="fstat-no" title="function not covered" >({</span> commit, state }) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return Auth.logout(state.auth.token)</span>
+      .then(<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >        localStorage.removeItem('token');</span>
+<span class="cstat-no" title="statement not covered" >        commit(types.AUTH_LOGOUT, { token: null, userId: null });</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >err</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
+      });
+  }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jun 16 2019 11:53:37 GMT+0900 (GMT+09:00)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>
