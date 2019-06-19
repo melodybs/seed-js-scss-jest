@@ -1,6 +1,7 @@
-/* import { createLocalVue, shallowMount, mount } from '@vue/test-utils';
+import { createLocalVue, mount } from '@vue/test-utils';
 import Vuex from 'vuex';
 import KbnLoginView from '@/components/templates/KbnLoginview.vue';
+import KbnLoginForm from '@/components/molecules/KbnLoginForm.vue';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
@@ -31,20 +32,30 @@ describe('KbnLoginView', () => {
     store = new Vuex.Store({ state: {}, actions });
   });
 
-  describe('로그인', () => {
+  /* describe('로그인', () => {
     let loginView;
     describe('성공', () => {
       beforeEach(() => {
         loginView = mount(KbnLoginView, {
           mocks: { $router },
-          stubs: { 'kbn-login-form': LoginFormComponentStub },
+          stubs: { 'kbn-login-form': KbnLoginForm },
           store,
           localVue
         });
       });
 
-      test('보드 페이지 루트로 리다이렉트', done => {});
+      test('보드 페이지 루트로 리다이렉트', done => {
+        expect.assertions(2);
+
+        triggerLogin(loginView, LoginFormComponentStub);
+        expect($router.push).not.toHaveBeenCalled();
+
+        loginView.vm.$nextTick(() => {
+          // expect($router.push.args[0][0].path).toBe('/');
+          expect($router.push).toHaveBeenCalled();
+          done();
+        });
+      });
     });
-  });
+  }); */
 });
- */

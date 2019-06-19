@@ -19,8 +19,8 @@ const Login = {
 };
 // 네비게이션 가드 구현 파일 안에서 사용할 Vuex 스토어 목업을 만드는 헬퍼 함수
 const mockAuthorizeToken = store => {
-  const injector = require('inject-loader!@/router/guards')
-  const storeMock = injector({ '../store': store })
+  const injector = require('inject-loader!@/router/guards');
+  const storeMock = injector({ '../store': store });
   return storeMock.authorizeToken;
 };
 const setup = state => {
@@ -76,3 +76,8 @@ describe('beforeEach 가드 훅', () => {
   });
 });
  */
+describe('TEST', () => {
+  it('test', () => {
+    expect(true).toBe(true);
+  });
+});
