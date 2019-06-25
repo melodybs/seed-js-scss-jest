@@ -5,6 +5,7 @@ import App from './App';
 import ErrorBoundary from './ErrorBoundary.vue'; // 오류를 포착하는 컴포넌트
 import router from './router';
 import store from './store'; // Vuex 스토어 인스턴스 임포트
+import i18n from './i18n'
 
 Vue.config.productionTip = false;
 Vue.config.performance = true; // NODE_ENV == 'development'로 설정하여 프로파일링 활성화
@@ -22,6 +23,10 @@ Vue.config.errorHandler = (err, vm, info) => {
 new Vue({
   el: '#app',
   router,
-  store, // 임포트한 스토어 인스턴스를 'store' 옵션으로 전달
+
+  // 임포트한 스토어 인스턴스를 'store' 옵션으로 전달
+  store,
+
+  i18n,
   render: h => h(App)
 });
