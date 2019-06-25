@@ -1,0 +1,19 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "eslint.alwaysShowStatus": true,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {"language": "vue", "autoFix": true},
+    {"language": "typescript", "autoFix": true },
+    {"language": "typescriptreact", "autoFix": true },
+    {"language": "css", "autoFix": true},
+    {"language": "html", "autoFix": true},
+    {"language": "scss", "autoFix": true},
+    {"language": "sass", "autoFix": true},
+    {"language": "less", "autoFix": true},
+  ]
+}
