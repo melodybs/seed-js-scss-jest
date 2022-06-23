@@ -57,7 +57,7 @@
     "jest-serializer-vue": "^2.0.2",
     "jest-validate": "^24.8.0",
     "jest-worker": "^24.6.0",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "jsdom-global": "^3.0.2",
     "node-sass": "^4.9.0",
     "pretty-format": "^24.8.0",
